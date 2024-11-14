@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Menü</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Allgemeine Stile */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f1e4;
+            color: #3a3a3a;
+        }
+        h1 {
+            font-family: 'Amatic SC', cursive;
+            font-size: 3em;
+            text-align: center;
+            margin: 0.5em 0;
+            color: #6b4226;
+            text-decoration: underline;
+        }
+        h2 {
+            font-family: 'Lobster', cursive;
+            font-size: 2em;
+            color: #a0522d;
+            margin: 1em 0 0.5em;
+        }
+        .category {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+            text-align: left;
+            color: #8b5e3c;
+            border-bottom: 2px dashed #8b5e3c;
+        }
+        .menu-item {
+            font-size: 1.1em;
+            padding: 0.5em 0;
+            text-align: left;
+            color: #3a3a3a;
+        }
+        .menu-item span {
+            font-weight: bold;
+            text-decoration: underline dotted;
+        }
+        .menu-price {
+            font-style: italic;
+            color: #6b4226;
+        }
+        .special {
+            color: #d2691e;
+            text-decoration: line-through;
+        }
+        ul.custom-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul.custom-list li::before {
+            content: "☕ ";
+            color: #8b4513;
+            font-size: 1.2em;
+            vertical-align: middle;
+        }
+        .centered-text {
+            text-align: center;
+            font-style: italic;
+            color: #a0522d;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Titel -->
+    <h1>Willkommen im Café Samy</h1>
+
+    <!-- Menü-Kategorie Kaffee -->
+    <section>
+        <h2>Kaffee</h2>
+        <div class="category">Espresso</div>
+        <ul class="custom-list">
+            <li class="menu-item"><span>Espresso</span> <span class="menu-price">€2.00</span></li>
+            <li class="menu-item"><span>Doppio</span> <span class="menu-price">€3.00</span></li>
+        </ul>
+        
+        <div class="category">Cappuccino</div>
+        <ul class="custom-list">
+            <li class="menu-item"><span>Cappuccino</span> <span class="menu-price">€2.50</span></li>
+            <li class="menu-item"><span>Latte Macchiato</span> <span class="menu-price">€3.20</span></li>
+        </ul>
+    </section>
+
+    <!-- Menü-Kategorie Tee -->
+    <section>
+        <h2>Tee</h2>
+        <div class="category">Grüner Tee</div>
+        <ul class="custom-list">
+            <li class="menu-item"><span>Jasmin Tee</span> <span class="menu-price">€2.80</span></li>
+            <li class="menu-item"><span>Matcha</span> <span class="menu-price">€3.50</span></li>
+        </ul>
+        
+        <div class="category">Schwarzer Tee</div>
+        <ul class="custom-list">
+            <li class="menu-item"><span>Earl Grey</span> <span class="menu-price">€2.60</span></li>
+            <li class="menu-item special"><span>Darjeeling</span> <span class="menu-price">€3.00</span></li>
+        </ul>
+    </section>
+
+    <!-- Hinweis unten -->
+    <p class="centered-text">Besondere Wünsche? Fragen Sie uns! Wir sind für Sie da.</p>
+
+</body>
+</html>
